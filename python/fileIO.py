@@ -1,6 +1,10 @@
 import os
 import json
 
+def writeFile(file_path, contents):
+	f = open(file_path, 'r+')
+	f.write(contents)
+
 def openFile(file_path):
 	return open(file_path, 'r')
 
@@ -23,3 +27,7 @@ def recursivelyReturnAllFiles(path):
 
 def getProjectFiles(project_path):
 	return recursivelyReturnAllFiles(project_path)
+
+def writeArrayAsJSONFile(file_path, objectArray):
+	jsonString = json.dumps(objectArray, sort_keys=True, indent=4, separators=(',', ': '))
+	writeToFile(file_path, jsonString)

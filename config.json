@@ -5,18 +5,15 @@
 	"default_match" : "20",
 	"projects":[
 		{
-			"name": "Project1", 
-			"location" : "example_projects/no_conflict"
+			"name": "No Confliction Project", 
+			"location" : "example_projects/no_conflict/",
+			"preprocessed" : "example_projects/no_conflict/preprocessed.json"
 		},
 
 		{
-			"name": "Project2", 
-			"location" : "example_projects/conflict"
-		},
-
-		{
-			"name": "NonExistantProject", 
-			"location" : "/url/to/anywhere/you/want"
+			"name": "Project With Confliction", 
+			"location" : "example_projects/conflict/",
+			"preprocessed" : "example_projects/conflict/preprocessed.json"
 		}
 	]
 }}
