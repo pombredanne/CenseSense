@@ -1,21 +1,16 @@
 import os
+import json
 
 def openFile(file_path):
-	f = open(file_location, 'r+')
-	contents = f.read()
-	return contents;
+	return open(file_path, 'r')
 
 def openJSONFile(file_path):
-	json_contents = openFile(openFile)
-	data = json.load(json_contents)
+	contents = openFile(file_path)
+	data = json.load(contents)
 	return data
 
 def openConfigFile():
 	return openJSONFile("../config.json")	
-
-def openConfigFile():
-	return openJSONFile("config.json")
-
 
 def recursivelyReturnAllFiles(path):
 	file_set = set()
@@ -26,12 +21,5 @@ def recursivelyReturnAllFiles(path):
 	        file_set.add(relFile)
 	return file_set;
 
-def trainingFilesToArray(training_path):
-	return recursivelyReturnAllFiles(training_path)
-
 def getProjectFiles(project_path):
 	return recursivelyReturnAllFiles(project_path)
-
-
-print(trainingFilesToArray("../training/licenseContents/"));
-print(getProjectFiles("../training/licenseContents/"))

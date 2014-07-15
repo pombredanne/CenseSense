@@ -7,10 +7,10 @@ are curious about the various impliciations/conflicts of licenses in your softwa
 
 ## How To Use
 
-## Licenses Supported (partially)
-- GPLv1 (python)
-- GPLv2 (python)
-- MIT (python)
+## Licenses Supported
+- GPLv1
+- GPLv2
+- MIT
 
 ## Licenses Not Yet Supported
 - Apache

@@ -1,13 +1,22 @@
 {"config": {
+	"base" : "../",
+	"attributes_files" : "training/licenseAttributes.json",
+	"training_folder" : "training/licenseContents/",
+	"default_match" : "20",
 	"projects":[
 		{
 			"name": "Project1", 
-			"location" : "example_projects/no_conflict",
+			"location" : "example_projects/no_conflict"
 		},
 
 		{
 			"name": "Project2", 
-			"location" : "example_projects/conflict",
+			"location" : "example_projects/conflict"
 		},
+
+		{
+			"name": "NonExistantProject", 
+			"location" : "/url/to/anywhere/you/want"
+		}
 	]
 }}
