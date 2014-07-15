@@ -1,24 +1,24 @@
 {"licenses": {
 	"GPLv1": {
-	"compatibility": [
-	  {"rule" : "commercialAllowed", "value" : "true", "warning": "GPL version 1 allows software to be used in commercial purposes"},
-	  {"rule" : "warrantyGiven", "value" : "false", "warning": "Code distributed under GPL version 1 "},
-	  {"rule" : "binaryOnly", "value" : "false", "warning": "GPL version 1 requires that code not be released under in binary-only form"},
-	  {"rule" : "binaryOnlyIfForced",  "value" : "true", "warning" : "GPL version 1 does not explicitly forbid binary-only forms of code be released if the releasing party is otherwise legally unable to release source-code"},
-	  {"rule" : "modificationsUnderNewLicense",  "value" : "false", "warning" : "GPL version 1 requires that any new modifications be released under the same license"},
-
-	]
+		"trainingFile" : "gplv1.json",
+		"compatibility": [
+		  {"rule" : "commercialAllowed", "value" : "true", "warning": "GPL version 1 allows software to be used in commercial purposes"},
+		  {"rule" : "warrantyGiven", "value" : "false", "warning": "Code distributed under GPL version 1 "},
+		  {"rule" : "binaryOnly", "value" : "false", "warning": "GPL version 1 requires that code not be released under in binary-only form"},
+		  {"rule" : "binaryOnlyIfForced",  "value" : "true", "warning" : "GPL version 1 does not explicitly forbid binary-only forms of code be released if the releasing party is otherwise legally unable to release source-code"},
+		  {"rule" : "modificationsUnderNewLicense",  "value" : "false", "warning" : "GPL version 1 requires that any new modifications be released under the same license"},
+		],
 	},
 
 	"MIT": {
-	"compatibility": [
-	  {"rule" : "commercialAllowed", "value" : "true", "warning": "The MIT License allows software to be used in commercial purposes"},
-	  {"rule" : "warrantyGiven", "value" : "false", "warning": "Code distributed under The MIT License has no warrantee given."},
-	  {"rule" : "binaryOnly", "value" : "false", "warning": "The MIT License does not deny the distribution of source-code in binary form only."},
-	  {"rule" : "binaryOnlyIfForced",  "value" : "true", "warning" : "The MIT License itself does not deny the distribution of source-code in binary form only, whether or not it is legally required for other reasons."},
-	  {"rule" : "modificationsUnderNewLicense",  "value" : "false", "warning" : "The MIT License requires that any new modifications be released under the same license"},
-	  {"rule" : "retainsLicenseAlways",  "value" : "true", "warning" : "The MIT License requires that its copyright notice remain in 'all copies or substantial portions of the Software.'"},
-
-	]
+		"trainingFile" : "mit.txt",
+		"compatibility": [
+		  {"rule" : "commercialAllowed", "value" : "true", "warning": "The MIT License allows software to be used in commercial purposes"},
+		  {"rule" : "warrantyGiven", "value" : "false", "warning": "Code distributed under The MIT License has no warrantee given."},
+		  {"rule" : "binaryOnly", "value" : "false", "warning": "The MIT License does not deny the distribution of source-code in binary form only."},
+		  {"rule" : "binaryOnlyIfForced",  "value" : "true", "warning" : "The MIT License itself does not deny the distribution of source-code in binary form only, whether or not it is legally required for other reasons."},
+		  {"rule" : "modificationsUnderNewLicense",  "value" : "false", "warning" : "The MIT License requires that any new modifications be released under the same license"},
+		  {"rule" : "retainsLicenseAlways",  "value" : "true", "warning" : "The MIT License requires that its copyright notice remain in 'all copies or substantial portions of the Software.'"},
+		]
 	}
 }}
