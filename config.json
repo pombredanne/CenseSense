@@ -1,0 +1,10 @@
+{"projects": {
+	"project1": {
+		"location" : "example_projects/no_conflict",
+		"ignore_file" : "example_projects/no_conflict/ignore.json"
+	},
+	"project2": {
+		"location":"example_projects/conflict",
+		"ignore_file" : "example_projects/conflict/ignore.json"
+	},
+}}
