@@ -27,13 +27,15 @@ If you see one in this list that you really want, adding licenses is really easy
 ## How To Add Another License
 
 We've tried to make it as easy as possible to add a new license to this project. 
-- training/LicenseAttributes.json, and add your desired license to the JSON and its details .
+- training/LicenseAttributes.json, and add your desired license to the JSON and its details.
+- create training/LicenseContents/{licenseName}.json, with the format of all the other JSON files in that folder.
 
-_Rules_
-commercialAllowed -> Does this license allow software to be sold commericially?
-warrantyGivein 	  -> Does this license explicitly give a warranty?
-binaryOnly		  -> Does this license allow the distribution of code in binary-only form?
-binaryOnlyIfForce -> Does this license explicitly require code to be released in non-binary form, even if the party is legally obligated not to release the source? (either by another license, court-order, gag-order, etc.)
+
+# Rules
+- commercialAllowed -> Does this license allow software to be sold commericially?
+- warrantyGivein 	  -> Does this license explicitly give a warranty?
+- binaryOnly		  -> Does this license allow the distribution of code in binary-only form?
+- binaryOnlyIfForce -> Does this license explicitly require code to be released in non-binary form, even if the party is legally obligated not to release the source? (either by another license, court-order, gag-order, etc.)
 
 (Feel free to add another, however, be ready to justify your opinion upon a pull-request.)
 
