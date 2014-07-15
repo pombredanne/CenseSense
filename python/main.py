@@ -18,13 +18,13 @@ for project in config["projects"]:
 	# Need to at some point remove the processing of the JSON file
 	# that stores preproccessed files.
 	for document in filesToProcess:
-		hashOfFile = hashlib.md5(fileIO.openFile(document)).hexdigest()
+		hashOfFile = hashlib.md5(fileIO.openFile(config['base']+project["location"]+document).read().encode('utf-8')).hexdigest()
 		hashOfFile = str(hashOfFile);
 
 		print("Files indexed, attempting to match them against licenses.\n")
 		for license in licenseAttributes["licenses"]:
-			if(hashOfFile in preprocesed):
-
+			if(hashOfFile in preprocessed):
+				print("nothing here")
 
 
 			else:
@@ -32,7 +32,7 @@ for project in config["projects"]:
 				licensePath = config['base'] + config['training_folder'] + licenseFile
 				licenseData = fileIO.openJSONFile(licensePath)
 				
-				threshold = licenseAttributes["licenses"][license]["default"];
+				threshold = licenseAttributes["licenses"][license]["match_required"];
 
 				# If the user for whatever reason decides to have different
 				# types of percentages matched throughout files.
@@ -42,8 +42,8 @@ for project in config["projects"]:
 					threshold =  float(config["default_match"])
 				else:
 					threshold = float(threshold)
-				
-				percentage = match.levenshteinPercentage(licenseData['contents'], fileIO.openFile(document))
+				print(licenseData['license'][string])
+				percentage = match.levenshteinPercentage(licenseData[license]['contents'], config['base']+fileIO.openFile(project["location"]+document).read().encode('utf-8'))
 				if(percentage > threshold):
 					preprocessed[hashOfFile][license] = "true"
 				else:

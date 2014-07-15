@@ -2,11 +2,11 @@ import os
 import json
 
 def writeFile(file_path, contents):
-	f = open(file_path, 'r+')
+	f = open(file_path, 'r+', encoding='utf-8')
 	f.write(contents)
 
 def openFile(file_path):
-	return open(file_path, 'r')
+	return open(file_path, 'r', encoding='utf-8')
 
 def openJSONFile(file_path):
 	contents = openFile(file_path)
