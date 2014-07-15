@@ -11,14 +11,17 @@ def openJSONFile(file_path):
 	return data
 
 def openConfigFile():
+	return openJSONFile("../config.json")	
+
+def openConfigFile():
 	return openJSONFile("config.json")
 
 
-def recursivelyReturnAllFiles(path)
+def recursivelyReturnAllFiles(path):
 	file_set = set()
-	for dir_, _, files in os.walk(project_path):
+	for dir_, _, files in os.walk(path):
 	    for fileName in files:
-	        relDir = os.path.relpath(dir_, project_path)
+	        relDir = os.path.relpath(dir_, path)
 	        relFile = os.path.join(relDir, fileName)
 	        file_set.add(relFile)
 	return file_set;
@@ -30,5 +33,5 @@ def getProjectFiles(project_path):
 	return recursivelyReturnAllFiles(project_path)
 
 
-print(trainingFilesToArray("../../training/licenseContents/"));
-print(getProjectFiles())
+print(trainingFilesToArray("../training/licenseContents/"));
+print(getProjectFiles("../training/licenseContents/"))

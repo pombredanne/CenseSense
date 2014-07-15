@@ -22,7 +22,21 @@ are curious about the various impliciations/conflicts of licenses in your softwa
 - Artistic License
 - GPLv3
 
-If you see one in this list that you really want, adding licenses is really easy. We just haven't gotten around to adding it yet. Feel free to make a pull-request!
+If you see one in this list that you really want, adding licenses is really easy. We just haven't gotten around to adding it yet. Feel free to make a pull-request! See the next section for more on how to add a license.
+
+## How To Add Another License
+
+We've tried to make it as easy as possible to add a new license to this project. 
+- training/LicenseAttributes.json, and add your desired license to the JSON and its details .
+
+_Rules_
+commercialAllowed -> Does this license allow software to be sold commericially?
+warrantyGivein 	  -> Does this license explicitly give a warranty?
+binaryOnly		  -> Does this license allow the distribution of code in binary-only form?
+binaryOnlyIfForce -> Does this license explicitly require code to be released in non-binary form, even if the party is legally obligated not to release the source? (either by another license, court-order, gag-order, etc.)
+
+(Feel free to add another, however, be ready to justify your opinion upon a pull-request.)
+
 
 ## Notes
 
@@ -34,6 +48,6 @@ that make it hard to distinguish the fundemental differences between two license
 
 ## The MIT License - Why?
 
-Because the original developer is not a dictator (yet.). and he genuinely believes that he has no right to decide arbitrarily what others can and cannot 
-copy of his work that he explicility released to the public with no strings attached. Share this code if you want to, and if you don't want to, that's cool too.
-Just have fun.
+Because the original developer is not a dictator (yet) and he genuinely believes that he has no right to decide arbitrarily what others can and cannot 
+copy of his work that he explicility released to the public with no financial/political strings attached. Share this code if you want to, and if you don't want to, that's cool too.
+Just have fun. Life is short, and it isn't worth making complicated. 
