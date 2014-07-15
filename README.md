@@ -31,7 +31,7 @@ We've tried to make it as easy as possible to add a new license to this project.
 - create training/LicenseContents/{licenseName}.json, with the format of all the other JSON files in that folder.
 
 
-# Rules
+### Rules
 - commercialAllowed -> Does this license allow software to be sold commericially?
 - warrantyGivein 	  -> Does this license explicitly give a warranty?
 - binaryOnly		  -> Does this license allow the distribution of code in binary-only form?
