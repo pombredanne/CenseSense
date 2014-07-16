@@ -1,7 +1,14 @@
-{"preprocessed": {
-	 "3e25960a79dbc69b674cd4ec67a72c62" : [
-	 										{"GPLv1" : "false"},
-	 										{"GPLv2" : "false"},
-	 										{"MIT" : "false"}
-	 									  ]
-}}
+{
+    "preprocessed": {
+        "a4ca0083d12cf4ff667997e67b8b4642": {
+            "GPLv1": "true",
+            "GPLv2": "true",
+            "MIT": "true"
+        },
+        "e8cb91663f7812cc8df78f34bf021901": {
+            "GPLv1": "true",
+            "GPLv2": "true",
+            "MIT": "true"
+        }
+    }
+}

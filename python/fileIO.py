@@ -30,4 +30,4 @@ def getProjectFiles(project_path):
 
 def writeArrayAsJSONFile(file_path, objectArray):
 	jsonString = json.dumps(objectArray, sort_keys=True, indent=4, separators=(',', ': '))
-	writeToFile(file_path, jsonString)
+	writeFile(file_path, jsonString)

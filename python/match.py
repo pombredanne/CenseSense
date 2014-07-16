@@ -6,7 +6,7 @@ def levenshtein(training_file, haystack):
     if len(haystack) == 0:
         return len(training_file)
  
-    previous_row = xrange(len(haystack) + 1)
+    previous_row = range(len(haystack) + 1)
     for i, c1 in enumerate(training_file):
         current_row = [i + 1]
         for j, c2 in enumerate(haystack):
@@ -19,4 +19,4 @@ def levenshtein(training_file, haystack):
     return previous_row[-1]
 
 def levenshteinPercentage(training_file, haystack):
-    return (levenshtein(training_file, haystack) / len(haystack)) * 100
+    return (levenshtein(training_file, haystack) / len(training_file)) * 100
