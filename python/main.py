@@ -12,7 +12,7 @@ preprocessedFileName = "preprocessed.json"
 # traits, and their 
 licenseAttributes = fileIO.openJSONFile(config['base'] + config['attributes_files'])
 
-print("Beginning to scan through project files defined in config.\n")
+print("Beginning to scan through project files defined in config.")
 for project in config["projects"]:
 	foundLicenses = []
 	preprocessed = fileIO.openJSONFile(config["base"]+project["preprocessed"] + preprocessedFileName)
@@ -21,7 +21,7 @@ for project in config["projects"]:
 	# Need to at some point remove the processing of the JSON file
 	# that stores preproccessed files.
 
-	print("Files indexed in "+project['name']+", attempting to match them against licenses.\n")
+	print("Files indexed in "+project['name']+", attempting to match them against licenses.")
 
 	for document in filesToProcess:
 		if preprocessedFileName not in document:
@@ -93,8 +93,8 @@ for project in config["projects"]:
 					preprocessed['preprocessed'][hashOfFile] = {}
 					
 					# Now we do the actual comparison.
-					print("Percentage : " + str(percentage) + "\n")
-					print("Threshold : " + str(threshold) + "\n")
+					print("Percentage : " + str(percentage))
+					print("Threshold : " + str(threshold))
 					if(percentage > threshold):
 						preprocessed['preprocessed'][hashOfFile][license] = "true"
 					else:
