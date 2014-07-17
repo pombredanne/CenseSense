@@ -6,6 +6,8 @@ import hashlib
 config = fileIO.openConfigFile()
 config = config["config"];
 
+preprocessedFileName = "preprocessed.json"
+
 # JSON listing all the licenses supported, each of their comparable
 # traits, and their 
 licenseAttributes = fileIO.openJSONFile(config['base'] + config['attributes_files'])
@@ -13,7 +15,7 @@ licenseAttributes = fileIO.openJSONFile(config['base'] + config['attributes_file
 print("Beginning to scan through project files defined in config.\n")
 for project in config["projects"]:
 	foundLicenses = []
-	preprocessed = fileIO.openJSONFile(config["base"]+project["preprocessed"])
+	preprocessed = fileIO.openJSONFile(config["base"]+project["preprocessed"] + preprocessedFileName)
 	filesToProcess = fileIO.getProjectFiles(config["base"]+project["location"])
 
 	# Need to at some point remove the processing of the JSON file

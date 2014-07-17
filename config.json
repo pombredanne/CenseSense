@@ -7,13 +7,13 @@
 		{
 			"name": "No Confliction Project", 
 			"location" : "example_projects/no_conflict/",
-			"preprocessed" : "example_projects/no_conflict/preprocessed.json"
+			"preprocessed" : "example_projects/no_conflict/"
 		},
 
 		{
 			"name": "Project With Confliction", 
 			"location" : "example_projects/conflict/",
-			"preprocessed" : "example_projects/conflict/preprocessed.json"
+			"preprocessed" : "example_projects/conflict/"
 		}
 	]
 }}
