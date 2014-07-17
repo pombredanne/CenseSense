@@ -93,8 +93,8 @@ for project in config["projects"]:
 					preprocessed['preprocessed'][hashOfFile] = {}
 					
 					# Now we do the actual comparison.
-					print("Percentage : " + str(percentage))
-					print("Threshold : " + str(threshold))
+					print("Percentage : " + str(percentage) + "")
+					print("Threshold : " + str(threshold) + "")
 					if(percentage > threshold):
 						preprocessed['preprocessed'][hashOfFile][license] = "true"
 					else:
