@@ -31,3 +31,5 @@ def getProjectFiles(project_path):
 def writeArrayAsJSONFile(file_path, objectArray):
 	jsonString = json.dumps(objectArray, sort_keys=True, indent=4, separators=(',', ': '))
 	writeFile(file_path, jsonString)
+
+### We will need to start being able to process by lines here.
