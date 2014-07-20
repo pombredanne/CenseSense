@@ -22,3 +22,4 @@ def levenshteinPercentage(training_file, haystack):
     return (levenshtein(training_file, haystack) / max(len(training_file),len(haystack))) * 100
 
     #
+    #
