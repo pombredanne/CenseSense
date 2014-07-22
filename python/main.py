@@ -106,3 +106,4 @@ for project in config["projects"]:
 		fileIO.writeArrayAsJSONFile(config["base"]+project["preprocessed"], preprocessed)
 
 	print(foundLicenses)
+	#
